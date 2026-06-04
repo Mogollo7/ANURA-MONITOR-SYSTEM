@@ -17,7 +17,10 @@ Este repositorio contiene el ecosistema completo de hardware, software, pruebas,
 ## 📁 Estructura del Repositorio
 
 El proyecto está organizado de manera modular y limpia para facilitar su escalabilidad, mantenimiento y carga a GitHub. A continuación se detalla el propósito de cada directorio:Anura_AI_Monitor/
+​
+```
 
+Nota: GitHub renderiza `xychart-beta` desde Mermaid 10+, que ya soporta. Se ve bien en READMEs públicos y privados.
 Anura_AI_Monitor/
 ├── 📁 1_Hardware_y_Montaje/
 │   ├── Manual_Montaje.md
@@ -35,7 +38,7 @@ Anura_AI_Monitor/
     ├── Solucion_Sensores.md
     ├── Errores_Alimentacion.md
     └── Bugs_Firmware.md
-
+```
 ---
 
 ## 🛠️ Especificaciones de Hardware (BOM Resumido)
@@ -68,14 +71,6 @@ El circuito base está integrado en una protoboard de 830 puntos bajo las siguie
 3. Abre el archivo `Firmware_ESP32.ino` ubicado en `2_Software_y_Codigo/Firmware_ESP32/` y haz clic en **Subir**.
 4. Una vez cargado, desconecta el puente de GPIO 0 y presiona **Reset** para iniciar el dispositivo.
 
----
 
-# Diagnóstico de Fallas (Troubleshooting)
 
-span
-----
 
-1. **[Errores de Conectividad USB](esp32_tools/troubleshooting/01_falla_conexion_usb.md)**
-2. **[Fallos del Bus I2C y Direccionamiento del Sensor](esp32_tools/troubleshooting/02_direccion_i2c_incorrecta.md)**
-3. **[Desconexiones WiFi y Lógica de Timeout](esp32_tools/troubleshooting/03_fallo_wifi_reconexion.md)**
-4. **[Reinicios y Caídas de Voltaje (Brownouts)](esp32_tools/troubleshooting/04_brownout_detector.md)**
